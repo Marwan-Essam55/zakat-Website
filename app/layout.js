@@ -23,13 +23,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl" className="light" style={{ colorScheme: 'light' }}>
       <head>
-        {/* الخطوة 2: كود جوجل أدسنس الخاص بك */}
+       
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6776396365196393"
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
+        <meta name="google-site-verification" content="CQ7SBApHqnUSun6ToQoELHWGTHwId-akbV1NC9i09R0" />
       </head>
       <body className={`${inter.className} bg-slate-50 text-slate-900 antialiased`}>
         {children}
